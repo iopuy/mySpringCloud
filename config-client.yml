@@ -1,0 +1,40 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+---
+server:
+  port: 801
+
+# spring 名字，数据源
+spring:
+  config:
+    activate:
+      on-profile: dev
+  application:
+    name: springcloud-provider-dept
+
+# eureka客户端
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/ # 向7001服务端注册
+      
+---
+server:
+  port: 802
+
+# spring 名字，数据源
+spring:
+  config:
+    activate:
+      on-profile: test
+  application:
+    name: springcloud-provider-dept
+
+# eureka客户端
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/ # 向7001服务端注册
