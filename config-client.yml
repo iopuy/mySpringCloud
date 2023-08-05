@@ -13,7 +13,7 @@ spring:
     activate:
       on-profile: dev
   application:
-    name: springcloud-provider-dept
+    name: springcloud-provider-dept-dev
 
 # eureka客户端
 eureka:
@@ -31,7 +31,7 @@ spring:
     activate:
       on-profile: test
   application:
-    name: springcloud-provider-dept
+    name: springcloud-provider-dept-test
 
 # eureka客户端
 eureka:
