@@ -17,12 +17,12 @@ spring:
 # eureka配置
 eureka:
   instance:
-    hostname: localhost
+    hostname: localhost:7001
   client:
     register-with-eureka: false # 表示是否向eureka注册中心注册自己,默认true
     fetch-registry: false # fetch-registry false则表示本服务为注册中心
     service-url: #监控页面地址 参考this.serviceUrl.put("defaultZone", "http://localhost:8761/eureka/");
-      defaultZone: http://localhost:7002/eureka/，http://localhost:7003/eureka/ # 这个,不知道会不会有问题
+      defaultZone: http://localhost:7002/eureka/,http://localhost:7003/eureka/ # 这个,不知道会不会有问题
       
 ---
 server:
@@ -38,9 +38,9 @@ spring:
 # eureka配置
 eureka:
   instance:
-    hostname: localhost
+    hostname: localhost:7001
   client:
     register-with-eureka: false # 表示是否向eureka注册中心注册自己,默认true
     fetch-registry: false # fetch-registry false则表示本服务为注册中心
     service-url: #监控页面地址 参考this.serviceUrl.put("defaultZone", "http://localhost:8761/eureka/");
-      defaultZone: http://localhost:7002/eureka/，http://localhost:7003/eureka/
+      defaultZone: http://localhost:7002/eureka/,http://localhost:7003/eureka/
